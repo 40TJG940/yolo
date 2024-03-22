@@ -29,7 +29,7 @@ define( 'DB_USER', 'wordpress' );
 define( 'DB_PASSWORD', 'finitowordpress' );
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'localhost:3306' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -48,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+define('AUTH_KEY', '+7P@:MO+#8756C&kx)Nh1m41e@B9_sz_|:C%mxMRGeP763H|0+*-vq(03P:j@Q2F');
+define('SECURE_AUTH_KEY', 'SB8z[rW;Sno30)[Lr[%i1y!r%R2Ts_K/v0G!(bwd4:bP21+pH497y8E[2:)s18YS');
+define('LOGGED_IN_KEY', 'YK5)%uxq6ux/%vj669)I6DNMmMJ0mG8_]#r5Y(C~ub-IUO8K!6()5-gh93;09gG#');
+define('NONCE_KEY', 'BbV67/9KQ8jS/]4EP_5Q8894o*0gd]4!vFYV3IA2%6_+7151z%ItXO/b(!_sj7M!');
+define('AUTH_SALT', '0+1si]4U/_y#7O(/Gy70@4Kk4@jq7pnO_Hf691OpdFW5ChtM3wa35KTCSU+-!z~Z');
+define('SECURE_AUTH_SALT', '_v&~3L8ij(yg/R8yJ&3%hoSYzDr@m92~*Gd(q6OBX[soxbNN0eQgw3!i9p&z+jP8');
+define('LOGGED_IN_SALT', 'G&9~*muhLmrr16bxt4h&]TRDP69F38[rG8)2LYG94!8A8YPH6|1N//~1N32)4IjN');
+define('NONCE_SALT', '96rX6aedUTSR0:is4Y5e25PRr84885_qqrS#h1QkPQgit7#6R&:48Lu7A:T:Me!+');
 
 /**#@-*/
 
@@ -79,12 +79,9 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/documentation/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
+define( 'WP_DEBUG', true );
 
 /* Add any custom values between this line and the "stop editing" line. */
-
-define( 'WP_HOME', 'http://3.87.91.221' );
-define( 'WP_SITEURL', 'http://3.87.91.221/');
 
 /* That's all, stop editing! Happy publishing. */
 
@@ -92,6 +89,9 @@ define( 'WP_SITEURL', 'http://3.87.91.221/');
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
 }
+
+define( 'WP_HOME', 'https://jolly-kowalevski.51-75-23-148.plesk.page' );
+define( 'WP_SITEURL', 'https://jolly-kowalevski.51-75-23-148.plesk.page');
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
